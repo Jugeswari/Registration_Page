@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="registration">Registration</div>
+  <form>
+    <div class="container2">
+      <div class="input-box">
+        <label class="inputtext">First Name</label>
+        <input type="text" placeholder="Enter your first name">
+      </div>
+      <div class="input-box">
+        <label class="inputtext">Last Name</label>
+        <input type="text" placeholder="Enter your last name">
+      </div>
+      <div class="input-box">
+        <label class="inputtext">Email</label>
+        <input type="text" placeholder="Enter your email">
+      </div>
+      <div class="input-box">
+        <label class="inputtext">Phone Number</label>
+        <input type="text" placeholder="Enter your phone number">
+      </div>
+      <div class="gender-box">
+       <label class="gender-title">Gender</label>
+       <div class="gender-category">
+         <input type="radio" value="male" name="gender"> 
+         <label>Male</label> 
+         <input type="radio" value="female" name="gender"> 
+         <label>Female</label>
+       </div>
+      </div>
+      <div class="input-box">
+         <label class="inputtext">Date of Birth</label>
+         <input type="date" required>
+      </div>
+      <div class="input-box">
+         <label class="inputtext">Qualification</label>
+         <select class="education" required> <option value="" disabled selected>Select your educational qualification</option> <option value="highschool">Secondary Education</option> <option value="associates">Higher Secondary Education</option> <option value="bachelors">Bachelor's Degree</option> <option value="masters">Master's Degree</option> <option value="phd">Ph.D.</option> <option value="other">Other</option></select> 
+      </div>
+      <div class="hobbies-box">
+          <label class="hobby-title">Hobbies</label>
+          <div class="hobby-category">
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="travelling" name="hobbies" value="travelling">
+            <label for="travelling">Travelling</label>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Music</label>
+          </div>
+       </div>
+       <div class="input-box">
+           <label class="inputtext">Address</label> 
+           <textarea row="2" cols="50" name="address" required></textarea>
+       </div>
+    <button type="submit">Register</button>
+    </div>
+  </form>
+</div>
+</body>
+
+</html>
